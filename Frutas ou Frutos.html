@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas ou Frutos?</title>
+    <script>
+        function listaDeCompras() {
+            let frutas = ["Graviola", "Guaraná", "Amora", "Pinha", "Pêssego"];
+            alert("Frutas disponíveis: " + frutas.join(", "));
+ 
+            while (frutas.length > 0) {
+                let fruta = prompt("Digite uma fruta para remover:");
+ 
+                if (frutas.includes(fruta)) {
+                    frutas.splice(frutas.indexOf(fruta), 1);
+                    alert("Fruta foi retirada da lista.");
+                } else {
+                    alert("Fruta indisponível no nosso mercado.");
+                }
+            }
+ 
+            alert("Lista de compras finalizada.");
+        }
+    </script>
+</head>
+<body onload="listaDeCompras()">
+</body>
+</html>
