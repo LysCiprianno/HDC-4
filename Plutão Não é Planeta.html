@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plutão Não é Planeta...</title>
+    <script>
+        function verificarPlaneta() {
+            // Lista de planetas
+            var planetas = ["Terra", "Marte", "Netuno", "Vênus", "Júpiter", "Saturno"];
+            
+            // Pede ao usuário para digitar um planeta
+            var planetaUsuario = prompt("Digite o nome de um planeta 🪐:");
+ 
+            // Verifica se o planeta está na lista
+            if (planetas.indexOf(planetaUsuario) !== -1) {
+                alert(planetaUsuario + " está na lista! 🌞");
+            } else {
+                alert(planetaUsuario + " não está na lista... 🤨");
+            }
+        }
+    </script>
+</head>
+<body onload="verificarPlaneta()">
+</body>
+</html>
